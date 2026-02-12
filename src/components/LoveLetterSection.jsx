@@ -1,10 +1,11 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 
 const LoveLetterSection = () => {
   return (
     <section className="min-h-screen py-20 px-4 relative flex items-center">
       {/* Romantic background */}
-      <div className="absolute inset-0 bg-linear-to-br from-romantic-cream via-romantic-blush to-pink-100"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-romantic-cream via-romantic-blush to-pink-100"></div>
       
       {/* Floating decorative hearts */}
       <motion.div
@@ -73,7 +74,7 @@ const LoveLetterSection = () => {
           className="relative"
         >
           {/* Paper texture and shadow */}
-          <div className="bg-linear-to-br from-amber-50 to-orange-50 p-8 md:p-12 rounded-lg shadow-romantic border-4 border-romantic-wine/10 relative overflow-hidden">
+          <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 md:p-12 rounded-lg shadow-romantic border-4 border-romantic-wine/10 relative overflow-hidden">
             {/* Decorative corner elements */}
             <div className="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-romantic-rose/30 rounded-tl-lg"></div>
             <div className="absolute top-0 right-0 w-20 h-20 border-t-4 border-r-4 border-romantic-rose/30 rounded-tr-lg"></div>
@@ -162,7 +163,7 @@ const LoveLetterSection = () => {
           </div>
 
           {/* Paper edge shadow effect */}
-          <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-black/5 pointer-events-none rounded-lg transform translate-y-1"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/5 pointer-events-none rounded-lg transform translate-y-1"></div>
         </motion.div>
 
         {/* Bottom decoration */}

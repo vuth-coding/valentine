@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 
 const HowItStarted = () => {
@@ -50,7 +51,7 @@ const HowItStarted = () => {
   return (
     <section className="min-h-screen py-20 px-4 relative">
       {/* Decorative background */}
-      <div className="absolute inset-0 bg-linear-to-b from-romantic-cream via-romantic-blush to-romantic-cream opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-romantic-cream via-romantic-blush to-romantic-cream opacity-50"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto">
         <motion.div
@@ -106,9 +107,9 @@ const HowItStarted = () => {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="w-full md:w-1/2"
               >
-                <div className={`bg-linear-to-br ${moment.gradient} p-1 rounded-2xl shadow-romantic`}>
+                <div className={`bg-gradient-to-br ${moment.gradient} p-1 rounded-2xl shadow-romantic`}>
                   <div className="bg-white p-4 rounded-xl">
-                    <div className="aspect-4/3 bg-gray-200 rounded-lg overflow-hidden">
+                    <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
                       {/* Replace with actual image */}
                       <img 
                         src={moment.image} 

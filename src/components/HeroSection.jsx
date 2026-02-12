@@ -1,10 +1,11 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-linear-to-br from-romantic-blush via-romantic-cream to-pink-100 opacity-80"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-romantic-blush via-romantic-cream to-pink-100 opacity-80"></div>
       
       {/* Decorative elements */}
       <motion.div

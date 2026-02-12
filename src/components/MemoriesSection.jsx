@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const MemoriesSection = () => {
@@ -59,7 +59,7 @@ const MemoriesSection = () => {
   return (
     <section className="min-h-screen py-20 px-4 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-linear-to-br from-romantic-blush via-white to-romantic-cream"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-romantic-blush via-white to-romantic-cream"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
@@ -105,7 +105,7 @@ const MemoriesSection = () => {
               onClick={() => setSelectedImage(memory)}
               className="cursor-pointer group"
             >
-              <div className="bg-linear-to-br from-romantic-rose to-romantic-wine p-1 rounded-2xl shadow-lg hover:shadow-romantic transition-shadow duration-300">
+              <div className="bg-gradient-to-br from-romantic-rose to-romantic-wine p-1 rounded-2xl shadow-lg hover:shadow-romantic transition-shadow duration-300">
                 <div className="bg-white p-3 rounded-xl">
                   <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden relative">
                     <img 
@@ -118,7 +118,7 @@ const MemoriesSection = () => {
                     />
                     
                     {/* Overlay on hover */}
-                    <div className="absolute inset-0 bg-linear-to-t from-romantic-wine/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <div className="absolute inset-0 bg-gradient-to-t from-romantic-wine/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                       <p className="text-white font-body text-sm">
                         {memory.caption}
                       </p>
@@ -148,7 +148,7 @@ const MemoriesSection = () => {
                 onClick={(e) => e.stopPropagation()}
                 className="max-w-4xl w-full bg-white rounded-2xl p-6 shadow-2xl"
               >
-                <div className="aspect-4/3 bg-gray-200 rounded-lg overflow-hidden mb-4">
+                <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
                     src={selectedImage.image} 
                     alt={selectedImage.caption}
@@ -160,7 +160,7 @@ const MemoriesSection = () => {
                 </p>
                 <button
                   onClick={() => setSelectedImage(null)}
-                  className="mt-4 w-full bg-linear-to-r from-romantic-rose to-romantic-wine text-white font-body text-lg py-3 rounded-lg hover:shadow-lg transition-all duration-300"
+                  className="mt-4 w-full bg-gradient-to-r from-romantic-rose to-romantic-wine text-white font-body text-lg py-3 rounded-lg hover:shadow-lg transition-all duration-300"
                 >
                   Close
                 </button>
