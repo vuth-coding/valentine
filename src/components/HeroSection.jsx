@@ -40,6 +40,45 @@ const HeroSection = () => {
         💖
       </motion.div>
 
+      {/* Floating Photobooth Pictures */}
+      <motion.div
+        className="absolute top-32 left-20 hidden lg:block"
+        initial={{ opacity: 0, rotate: -15, scale: 0 }}
+        animate={{ opacity: 1, rotate: -12, scale: 1 }}
+        transition={{ delay: 1.5, duration: 1, type: "spring" }}
+        whileHover={{ scale: 1.1, rotate: -8, zIndex: 50 }}
+      >
+        <div className="bg-white p-3 rounded-lg shadow-romantic" style={{ width: '200px' }}>
+          <img 
+            src="/images/photobooth-1.png" 
+            alt="Our memories together"
+            className="w-full h-auto rounded"
+          />
+          <p className="text-center font-script text-sm text-romantic-wine mt-2">
+            First kiss hehe
+          </p>
+        </div>
+      </motion.div>
+
+      <motion.div
+        className="absolute bottom-32 right-20 hidden lg:block"
+        initial={{ opacity: 0, rotate: 15, scale: 0 }}
+        animate={{ opacity: 1, rotate: 12, scale: 1 }}
+        transition={{ delay: 2, duration: 1, type: "spring" }}
+        whileHover={{ scale: 1.1, rotate: 8, zIndex: 50 }}
+      >
+        <div className="bg-white p-3 rounded-lg shadow-romantic" style={{ width: '200px' }}>
+          <img 
+            src="/images/photobooth-2.png" 
+            alt="Us being adorable"
+            className="w-full h-auto rounded"
+          />
+          <p className="text-center font-script text-sm text-romantic-wine mt-2">
+            First Photobooth ❤️
+          </p>
+        </div>
+      </motion.div>
+
       {/* Main content */}
       <div className="relative z-10 text-center px-4">
         <motion.div

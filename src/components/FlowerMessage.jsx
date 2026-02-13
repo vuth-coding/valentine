@@ -86,18 +86,12 @@ const FlowerMessage = () => {
         className="bg-white/90 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-romantic border-4 border-romantic-rose/30 max-w-3xl mx-auto"
       >
         <h3 className="font-display text-3xl md:text-4xl font-semibold text-romantic-wine mb-6 text-center">
-          I wanted to send you flowers today...
+          I'm sorry I wanted to send you flower
         </h3>
         
         <div className="space-y-3 font-body text-lg md:text-xl text-gray-700 leading-relaxed text-center">
           <p className="text-romantic-rose italic">
             But I'd rather give them to you in person
-          </p>
-          <p className="text-gray-600">
-            —when I can see your reaction,
-          </p>
-          <p className="text-gray-600">
-            when I can hear your laugh,
           </p>
           <p className="text-gray-600">
             when I can say "I love you" without a screen between us.
@@ -111,7 +105,7 @@ const FlowerMessage = () => {
           className="mt-8 text-center"
         >
           <p className="font-script text-3xl md:text-4xl text-romantic-wine">
-            Until we meet again... 🌹
+            Until we meet again 🌹
           </p>
         </motion.div>
       </motion.div>
@@ -141,15 +135,6 @@ const FlowerMessage = () => {
           </motion.span>
         ))}
       </motion.div>
-
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 3 }}
-        className="font-script text-3xl text-romantic-wine mt-8"
-      >
-        Forever and Always ∞
-      </motion.p>
     </div>
   );
 };

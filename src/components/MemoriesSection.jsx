@@ -8,50 +8,50 @@ const MemoriesSection = () => {
   const memories = [
     { 
       id: 1, 
-      image: "/memory-1.jpg", 
-      caption: "Our first adventure together ❤️",
+      image: "/pic/1.png", 
+      caption: "Lmaooo",
       emoji: "🎉"
     },
     { 
       id: 2, 
-      image: "/memory-2.jpg", 
-      caption: "That beautiful sunset 🌅",
+      image: "/pic/2.png", 
+      caption: "Drinkkkk",
       emoji: "🌅"
     },
     { 
       id: 3, 
-      image: "/memory-3.jpg", 
-      caption: "Coffee dates are the best ☕",
+      image: "/pic/3.png", 
+      caption: "Our first photobooth yayay",
       emoji: "☕"
     },
     { 
       id: 4, 
-      image: "/memory-4.jpg", 
-      caption: "Making memories every day 💕",
+      image: "/pic/4.png", 
+      caption: "Our first promise to stay together",
       emoji: "💕"
     },
     { 
       id: 5, 
-      image: "/memory-5.jpg", 
-      caption: "You always make me smile 😊",
+      image: "/pic/5.jpg", 
+      caption: "Third date yayyyyy",
       emoji: "😊"
     },
     { 
       id: 6, 
-      image: "/memory-6.jpg", 
-      caption: "Adventures with you are my favorite 🗺️",
+      image: "/pic/6.png", 
+      caption: "Bro drink two coffee",
       emoji: "🗺️"
     },
     { 
       id: 7, 
-      image: "/memory-7.jpg", 
-      caption: "Every moment is special with you ✨",
+      image: "/pic/7.JPG", 
+      caption: "Yayyayay",
       emoji: "✨"
     },
     { 
       id: 8, 
-      image: "/memory-8.jpg", 
-      caption: "You're my everything 💖",
+      image: "/pic/8.JPEG", 
+      caption: "Last day",
       emoji: "💖"
     },
   ];
@@ -73,9 +73,6 @@ const MemoriesSection = () => {
           <h2 className="font-display text-6xl md:text-7xl font-bold text-romantic-wine mb-6">
             Our Precious Memories
           </h2>
-          <p className="font-body text-2xl text-romantic-rose italic">
-            Every moment with you is a treasure 💎
-          </p>
         </motion.div>
 
         {/* Photo Grid */}
@@ -160,7 +157,7 @@ const MemoriesSection = () => {
                 </p>
                 <button
                   onClick={() => setSelectedImage(null)}
-                  className="mt-4 w-full bg-gradient-to-r from-romantic-rose to-romantic-wine text-white font-body text-lg py-3 rounded-lg hover:shadow-lg transition-all duration-300"
+                  className="mt-4 w-full bg-linear-to-r from-romantic-rose to-romantic-wine text-black/40 font-body text-lg py-3 rounded-lg hover:shadow-lg transition-all duration-300"
                 >
                   Close
                 </button>

@@ -4,24 +4,24 @@ import { motion } from 'framer-motion';
 const HowItStarted = () => {
   const moments = [
     {
-      title: "First Time You Talked",
+      title: "First Time We Met",
       emoji: "💬",
-      image: "/path-to-your-image-1.jpg", // Replace with your image path
-      message: "Replace this with your special message about the first time you talked. Make it personal and memorable!",
+      image: "/memories/howwemet.png", // Replace with your image path
+      message: "Our story began in Minecraft. You were the builder, and I was the quiet developer on Chester MC. At first, I didn’t even talk to you because I was too shy. Then one day, you messaged me on Discord. From that moment, we started chatting, and little by little, our conversations grew. It was simple, it was funny, but it was also the beginning of us..",
       gradient: "from-pink-200 to-rose-200"
     },
     {
-      title: "First Time You Laughed Together",
+      title: "The Confession",
       emoji: "😄",
-      image: "/path-to-your-image-2.jpg", // Replace with your image path
-      message: "Replace this with your special message about the first time you laughed together. Remember that funny moment!",
+      image: "/memories/confess.png", // Replace with your image path
+      message: "I still remember the very first time I tried to confess my feelings to you. You asked me what my type was, and without thinking I said, ‘It’s you.’ But you didn’t hear me the first time and asked again… and I was so shy that I quickly ended the call. But then, you called me back. And in that moment, I couldn’t hide it anymore. I confessed to you that day, and it felt like the beginning of our own love story.",
       gradient: "from-rose-200 to-red-200"
     },
     {
-      title: "First Time You Missed Each Other",
-      emoji: "💭",
-      image: "/path-to-your-image-3.jpg", // Replace with your image path
-      message: "Replace this with your special message about the first time you missed each other. Those butterflies...",
+      title: "IRL Meeting",
+      emoji: "💖",
+      image: "/memories/irl.png", // Replace with your image path
+      message: "After just a week of falling in love, fate gave me the perfect chance. My sister mentioned she wanted to go to Siem Reap, and I quickly asked if I could join her. That’s how I found myself on the way to Siem Reap… and that’s how I finally met you. The first time I saw my girlfriend in real life, I was so nervous I forgot how to be a human. I couldn’t even speak! I just stood there, smiling like a tourist who lost his map. My heart was racing, my hands didn’t know where to go, and my brain was completely blank. It was awkward, it was funny… but it was also perfect. Because even in that silly, shy moment, I knew I was meeting the person who would change my life.",
       gradient: "from-red-200 to-pink-200"
     }
   ];
@@ -51,7 +51,7 @@ const HowItStarted = () => {
   return (
     <section className="min-h-screen py-20 px-4 relative">
       {/* Decorative background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-romantic-cream via-romantic-blush to-romantic-cream opacity-50"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-romantic-cream via-romantic-blush to-romantic-cream opacity-50"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto">
         <motion.div

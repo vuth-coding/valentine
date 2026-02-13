@@ -32,9 +32,6 @@ function App() {
       
       {/* Footer */}
       <footer className="relative z-10 bg-romantic-wine/10 backdrop-blur-sm py-8 text-center">
-        <p className="font-script text-2xl text-romantic-wine">
-          Made with endless love ❤️
-        </p>
         <p className="font-body text-romantic-wine/70 mt-2">
           Happy Valentine's Day, Dawin! 💕
         </p>

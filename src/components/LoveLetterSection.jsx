@@ -61,7 +61,7 @@ const LoveLetterSection = () => {
           </motion.div>
         </motion.div>
 
-        {/* Letter container with paper effect */}
+        {/* Letter container with photo on top */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9, rotateX: -15 }}
           whileInView={{ opacity: 1, scale: 1, rotateX: 0 }}
@@ -73,8 +73,29 @@ const LoveLetterSection = () => {
           viewport={{ once: true }}
           className="relative"
         >
+          {/* Noah-inspired Photo - Placed ON the letter */}
+          <motion.div
+            initial={{ opacity: 0, y: -50, rotate: 5 }}
+            whileInView={{ opacity: 1, y: 0, rotate: -3 }}
+            transition={{ duration: 1, delay: 0.8, type: "spring" }}
+            viewport={{ once: true }}
+            className="absolute -top-16 left-1/2 transform -translate-x-1/2 z-20 w-64 md:w-80"
+          >
+            <div className="bg-gradient-to-br from-romantic-rose to-romantic-wine p-1 rounded-lg shadow-2xl">
+              <div className="bg-white p-3 rounded-md">
+                <img 
+                  src="/images/vuthnoah.png" 
+                  alt="Like Noah from The Notebook"
+                  className="w-full h-auto rounded"
+                />
+                <p className="text-center font-script text-sm md:text-base text-romantic-wine mt-2 italic">
+                  So it's not gonna be easy...
+                </p>
+              </div>
+            </div>
+          </motion.div>
           {/* Paper texture and shadow */}
-          <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 md:p-12 rounded-lg shadow-romantic border-4 border-romantic-wine/10 relative overflow-hidden">
+          <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 md:p-12 pt-24 md:pt-32 rounded-lg shadow-romantic border-4 border-romantic-wine/10 relative overflow-hidden">
             {/* Decorative corner elements */}
             <div className="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-romantic-rose/30 rounded-tl-lg"></div>
             <div className="absolute top-0 right-0 w-20 h-20 border-t-4 border-r-4 border-romantic-rose/30 rounded-tr-lg"></div>
@@ -108,32 +129,24 @@ const LoveLetterSection = () => {
                 className="space-y-6 font-body text-lg md:text-xl text-gray-800 leading-relaxed"
               >
                 <p className="first-letter:text-6xl first-letter:font-display first-letter:text-romantic-wine first-letter:mr-2 first-letter:float-left">
-                  Every day with you feels like a beautiful dream I never want to wake up from. 
-                  You've brought so much joy, laughter, and love into my life, and I am endlessly 
-                  grateful for every moment we share together.
+                  I couldn't sleep last night because I was thinking about how lucky I am that you're mine. Every moment with you feels like a gift I never knew I was waiting for. What we have is real the kind of love that makes the ordinary feel extraordinary, that turns simple days into memories I want to keep forever.
                 </p>
 
                 <p>
-                  From the first time we talked, I knew there was something special about you. 
-                  Your smile lights up my darkest days, your laugh is my favorite melody, and 
-                  your presence makes everything better. You are my best friend, my partner, 
-                  and my greatest adventure.
+                  When I think about our future together, my heart races with excitement. I see us in our new lives, hand in hand, still learning from each other and growing deeper in love. I see lazy Sunday mornings and adventures we haven't dreamed of yet. I see a lifetime of summers beneath the trees, of laughter that echoes through the years.
                 </p>
 
                 <p>
-                  I love the way you [add your personal touch here - something specific they do], 
-                  the way you [another personal detail], and how you always [something you appreciate]. 
-                  These little things mean the world to me.
+                  The best love is the kind that awakens the soul and makes us reach for more, that plants a fire in our hearts and brings peace to our minds and that's what you've given me. That's what I promise to give you, not just today, but every day we have together.
                 </p>
 
                 <p>
-                  Thank you for being you, for loving me, for standing by me, and for making 
-                  every ordinary day extraordinary. You are my heart, my home, and my forever.
+                  You make me believe in forever, Dawin. You make me believe that the best is yet to come.
                 </p>
 
                 <p className="italic text-romantic-wine">
-                  I love you more than words could ever express, and I can't wait to create 
-                  countless more beautiful memories with you. ❤️
+                   I love you more than words can say.
+                    I'll be loving you always.
                 </p>
               </motion.div>
 
@@ -149,7 +162,7 @@ const LoveLetterSection = () => {
                   With all my love,
                 </p>
                 <p className="font-script text-4xl text-romantic-wine">
-                  Forever Yours ❤️
+                  Vuth
                 </p>
               </motion.div>
             </div>
